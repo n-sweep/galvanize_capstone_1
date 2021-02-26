@@ -295,7 +295,7 @@ def main():
             print('\t', i, card['name'], f"({card['names']})" if 'names' in card else '')
         return input('Choose a number or "next" or "skip"')
 
-    for name in ['Upheaval', 'Vesuva', 'Void', 'Wasteland', 'Wonder']:
+    for name in missing:
         page = 1
         print('\n')
         print(name)
