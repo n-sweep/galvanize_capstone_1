@@ -8,6 +8,7 @@ Not only does *MTG* still enjoy popularity - and regularly released sets of new 
 <br/><br/>
 
 ---
+
 ## **Background & Motivation**
 
 ![the MTG 'color pie'](images/MM20161114_Wheel_small.png)
@@ -15,10 +16,21 @@ Not only does *MTG* still enjoy popularity - and regularly released sets of new 
 *Magic* became a part of my life at a young age and it wasn't long before I was playing competitvely in sanctioned events. First at local collectables stores and later traveling to larger events, often in neighboring states, which I continued to do for over a decade. It has been some years since I played in this context, but over the years I met many other players who remain close friends to this day, and the game remains very close to my heart.
 
 *Magic* is a game of both skill and chance, where decisions made by a player can have consequences many turns on. Each player has their own deck to draw from, and the decks are not (necessarily) identical, but built by the individual player from a larger pool of available cards. After over 25 years of printing, there are tens of thousands of cards to choose from.
-<br/>
+<br/><br/>
 
-#### **Rarity as an Attribute**
+### **Rarity as an Attribute**
 
 Being a trading card game, a big part of *MTG* is collectability and, naturally, a big part of collectability is the scarcity or rarity of a collectible item. *Magic* cards are printed with a predetermined rarity set by Wizards of the Coast. This is somewhat an indication of how 'powerful' or how effective a card would be in a competitive setting. More concretely, it's an indication of how many of that card was manufactured, as fewer copies of a rare card are printed than those of a common card.
 
-For this project, I will explore 
+**So, rare cards should be better cards. Does more rare cards in your deck really translate to wins?**
+<br/><br/>
+
+---
+
+## **Data & Analysis**
+
+Using a combination of the Requests, Selenium and BeautifulSoup Python libraries, I scraped the top performing decks from tournament results at [mtgtop8.com](https://www.mtgtop8.com) and individual card stats from [magicthegathering.oi](https://magicthegathering.io)'s convenient API, storing the data with MongoDB
+
+![Ratio of Rare Cards in Winning Decks](images/1st_vs_all.png)
+
+Visually, the 1st place decks tend to have a few more rare cards, but the difference was not statistically significant. After testing each group against one another using a Welch's T-test, I found that the p-values for each test were more than double the established alpha of 0.05, even before applying the Bonferroni correction.
