@@ -12,6 +12,13 @@ Not only does *MTG* still enjoy popularity - and regularly released sets of new 
 
 ![the MTG 'color pie'](images/MM20161114_Wheel_small.png)
 
-*Magic* became a part of my life at a young age and it wasn't long before I was playing competitvely in sanctioned events at local collectables stores and later traveling to larger events, often in neighboring states, which I continued to for over a decade. It has been some years since I played in this context, but over the years I met many other players who remain close friends to this day, and the game remains very close to my heart.
+*Magic* became a part of my life at a young age and it wasn't long before I was playing competitvely in sanctioned events. First at local collectables stores and later traveling to larger events, often in neighboring states, which I continued to do for over a decade. It has been some years since I played in this context, but over the years I met many other players who remain close friends to this day, and the game remains very close to my heart.
 
-*Magic* is a game of both skill and chance, where decisions made by a player can have consequences many turns in the future, but the cards those decisions are based on are drawn randomly from a shuffled deck. Each player has their own deck to draw from, and they are not identical, but built by the individual player from a larger pool of available cards.
+*Magic* is a game of both skill and chance, where decisions made by a player can have consequences many turns on. Each player has their own deck to draw from, and the decks are not (necessarily) identical, but built by the individual player from a larger pool of available cards. After over 25 years of printing, there are tens of thousands of cards to choose from.
+<br/>
+
+#### **Rarity as an Attribute**
+
+Being a trading card game, a big part of *MTG* is collectability and, naturally, a big part of collectability is the scarcity or rarity of a collectible item. *Magic* cards are printed with a predetermined rarity set by Wizards of the Coast. This is somewhat an indication of how 'powerful' or how effective a card would be in a competitive setting. More concretely, it's an indication of how many of that card was manufactured, as fewer copies of a rare card are printed than those of a common card.
+
+For this project, I will explore 
