@@ -34,3 +34,6 @@ Using a combination of the Requests, Selenium and BeautifulSoup Python libraries
 ![Ratio of Rare Cards in Winning Decks](images/1st_vs_all.png)
 
 Visually, the 1st place decks tend to have a few more rare cards, but the difference was not statistically significant. After testing each group against one another using a Welch's T-test, I found that the p-values for each test were more than double the established alpha of 0.05, even before applying the Bonferroni correction.
+<br/><br/>
+
+![Tech Stack](images/stack.png)
