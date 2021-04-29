@@ -7,8 +7,6 @@ Not only does *MTG* still enjoy popularity - and regularly released sets of new 
 ![a large Magic: the Gathering tournament](images/mtgtourny.jpg)
 <br/><br/>
 
----
-
 ## **Background & Motivation**
 
 ![the MTG 'color pie'](images/MM20161114_Wheel_small.png)
@@ -22,18 +20,24 @@ Not only does *MTG* still enjoy popularity - and regularly released sets of new 
 
 Being a trading card game, a big part of *MTG* is collectability and, naturally, a big part of collectability is the scarcity or rarity of a collectible item. *Magic* cards are printed with a predetermined rarity set by Wizards of the Coast. This is somewhat an indication of how 'powerful' or how effective a card would be in a competitive setting. More concretely, it's an indication of how many of that card was manufactured, as fewer copies of a rare card are printed than those of a common card.
 
-**So, rare cards should be better cards. Does more rare cards in your deck really translate to wins?**
+**So, rare cards should be better cards. Does a higher ratio of rare cards in your deck really translate to wins?**
 <br/><br/>
 
----
-
-## **Data & Analysis**
+# **Data & Analysis**
 
 Using a combination of the Requests, Selenium and BeautifulSoup Python libraries, I scraped the top performing decks from tournament results at [mtgtop8.com](https://www.mtgtop8.com) and individual card stats from [magicthegathering.oi](https://magicthegathering.io)'s convenient API, storing the data with MongoDB
 
 ![Ratio of Rare Cards in Winning Decks](images/1st_vs_all.png)
 
-Visually, the 1st place decks tend to have a few more rare cards, but the difference was not statistically significant. After testing each group against one another using a Welch's T-test, I found that the p-values for each test were more than double the established alpha of 0.05, even before applying the Bonferroni correction.
+Visually, the 1st place decks tend to have a few more rare cards, but the difference was not statistically significant. After testing each group against one another using a Welch's T-test, I found that the p-values for each test were more than double the established alpha of 0.05, even before applying the Bonferroni correction, leaving us to fail to reject the null hypothesis that 
 <br/><br/>
 
+# Conclusions & Next Steps
+
+While card choices and deck construction are important, it's players that ultimately win games. For this project, results considered were taken from Worlds tournaments between 1994 and 2019 - the highest level of competition in the game. At this level, everyone has access to the good cards they need and it's game choices that decide matches. Given this, it's not surprising to find that ratios of rare cards don't have a connection to games won.
+
+I would be interesting to consider in the future lower level games, which are also much more common than the annual Worlds event. Players at this level are less experienced and may have less access to more effective cards, leading to decks with more of them winning more often.
+<br/><br/>
+
+## Technologies Used to Complete this Project
 ![Tech Stack](images/stack.png)
